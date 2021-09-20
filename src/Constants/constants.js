@@ -1,0 +1,10 @@
+export const ADD_TO_LIST = 'ADD_TO_LIST'
+export const ADD_TO_LIST_RESET = 'ADD_TO_LIST_RESET'
+
+export const CLEAR_CART = 'CLEAR_CART'
+
+export const REMOVE_ITEM = 'REMOVE_ITEM'
+export const REMOVE_ITEM_RESET = 'REMOVE_ITEM_RESET'
+
+export const EDITING_ITEM = 'EDITING_ITEM'
+export const EDITING_ITEM_RESET = 'EDITING_ITEM_RESET'

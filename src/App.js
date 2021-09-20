@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useTodoContext } from './context/todoContext'
+import styled from 'styled-components'
+import Form from './components/Form'
+import ListContainer from './components/ListContainer'
+const Wrapper = styled.section``
 
 function App() {
+  const { list } = useTodoContext()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Wrapper className='section-center'>
+      <Form />
+      {list.length > 0 && <ListContainer />}
+    </Wrapper>
+  )
 }
 
-export default App;
+export default App
